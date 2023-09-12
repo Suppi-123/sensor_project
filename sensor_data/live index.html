@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sensor Data</title>
+</head>
+<body>
+    <h1>Sensor Data</h1>
+    <select id="sensor-column">
+        <option value="temperature">temperature</option>
+        <option value="humidity">humidity</option>
+        <option value="distance">distance</option>
+        <option value="ldrValue">ldrValue</option>
+        <option value="flameValue">flameValue</option>
+        <option value="pirValue">pirValue</option>
+        <option value="soilMoistureValue">soilMoistureValue</option>
+        <option value="rainValue">rainValue</option>
+        <option value="heartbeatValue">heartbeatValue</option>
+        
+    </select>
+    <input type="text" id="timestamp" placeholder="Timestamp (YYYY-MM-DD HH:MM:SS)">
+    <button onclick="getSensorData()">Get Sensor Data</button>
+    <div id="sensor-data"></div>
+    <div id="gauge"></div>
+    <div id="graph"></div>
+</body>
+</html>

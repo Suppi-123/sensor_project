@@ -1,0 +1,22 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+ 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;  
+}
+.element1 {
+  background-color: #A3D9A5;
+}
+
+.element2 {
+  background-color: #FF6F61;
+}
+#myCanvas {
+  border: 1px solid #ccc;
+}
+
+
+/* Add your CSS styles here */

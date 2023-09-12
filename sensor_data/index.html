@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SENSORS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gaugeJS/dist/gauge.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/chart.js/dist/Chart.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <script src="script.js"></script>
+</head>
+<body>
+  <h1>SENSORS</h1>
+  <h2>Select Sensors To Get The Data</h2>
+  
+  <div id="sensors">
+    <div class="flex" style="margin-top: 30px;display: flex;">
+      <!-- The sensor checkboxes will be generated dynamically by JavaScript -->
+      <section>
+        <div class="a sensorlist" id="temperature">
+          <label>
+            <input type="checkbox" name="sensors" value="temperature">
+            Temperature
+          </label>
+        </div>
+        <div class="b sensorlist" id="humidity">
+          <label>
+            <input type="checkbox" name="sensors" value="humidity">
+            Humidity
+          </label>
+        </div>
+        <div class="c sensorlist" id="ldr_value">
+          <label>
+            <input type="checkbox" name="sensors" value="ldr_value">
+            LDR
+          </label>
+        </div>
+        <div class="d sensorlist" id="distance">
+          <label>
+            <input type="checkbox" name="sensors" value="distance">
+            Ultrasonic
+          </label>
+        </div>
+        <div class="e sensorlist" id="heartbeat_value">
+          <label>
+            <input type="checkbox" name="sensors" value="heartbeat_value">
+            Pulse
+          </label>
+        </div>
+        <div class="f sensorlist" id="flame_value">
+          <label>
+            <input type="checkbox" name="sensors" value="flame_value">
+            Flame Sensor
+          </label>
+        </div>
+        <div class="g sensorlist" id="pir_value">
+          <label>
+            <input type="checkbox" name="sensors" value="pir_value">
+            PIR
+          </label>
+        </div>
+        <div class="h sensorlist" id="rain_value">
+          <label>
+            <input type="checkbox" name="sensors" value="rain_value">
+            Rain
+          </label>
+        </div>
+        <div class="i sensorlist" id="soil_moisture_value">
+          <label>
+            <input type="checkbox" name="sensors" value="soil_moisture_value">
+            Soil Moisture
+          </label>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <button id="generate-data">Generate Data</button>
+
+  <div id="gauges"></div>
+  <div id="graph"></div>
+  <script src="https://cdn.jsdelivr.net/npm/gaugeJS/dist/gauge.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
